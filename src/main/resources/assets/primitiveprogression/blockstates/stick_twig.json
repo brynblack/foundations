@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "primitiveprogression:block/stick_twig"
+            },
+            {
+                "model": "primitiveprogression:block/stick_twig",
+                "y": 90
+            },
+            {
+                "model": "primitiveprogression:block/stick_twig",
+                "y": 180
+            },
+            {
+                "model": "primitiveprogression:block/stick_twig",
+                "y": 270
+            }
+        ]
+    }
+}

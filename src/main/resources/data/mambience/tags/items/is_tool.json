@@ -1,12 +1,12 @@
 {
     "replace": false,
     "values": [
-        "earlygame:flint_axe",
-        "earlygame:flint_pickaxe",
-        "earlygame:copper_axe",
-        "earlygame:copper_pickaxe",
-        "earlygame:copper_shovel",
-        "earlygame:copper_hoe",
-        "#earlygame:saws"
+        "primitiveprogression:flint_axe",
+        "primitiveprogression:flint_pickaxe",
+        "primitiveprogression:copper_axe",
+        "primitiveprogression:copper_pickaxe",
+        "primitiveprogression:copper_shovel",
+        "primitiveprogression:copper_hoe",
+        "#primitiveprogression:saws"
     ]
 }

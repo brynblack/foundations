@@ -1,12 +1,12 @@
 <p align="center">
-<a href="https://github.com/JayCeeCreates/earlygame/blob/master/LICENSE"><img src="https://img.shields.io/github/license/jayceecreates/earlygame?style=for-the-badge"></a>
+<a href="https://github.com/me.brynblack/primitiveprogression/blob/master/LICENSE"><img src="https://img.shields.io/github/license/me.brynblack/primitiveprogression?style=for-the-badge"></a>
 <img src="https://img.shields.io/badge/mc%20version-1.16--1.19-299137?style=for-the-badge">
 <a href="https://fabricmc.net"><img src="https://img.shields.io/badge/modloader-fabric-red?style=for-the-badge"></a>
-<a href="https://jayceecreates.github.io/earlygame/donate" target="_blank"><img src="https://img.shields.io/badge/donate-paypal-blue?style=for-the-badge"></a>
+<a href="https://me.brynblack.github.io/primitiveprogression/donate" target="_blank"><img src="https://img.shields.io/badge/donate-paypal-blue?style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <img width="100%" src="https://github.com/JayCeeCreates/earlygame/raw/resources/earlygame_header.png">
+  <img width="100%" src="https://github.com/me.brynblack/primitiveprogression/raw/resources/primitiveprogression_header.png">
 </p>
 
 <h4 align="center">A Fabric mod that focuses on changing early game progression that makes the gameplay feel more "realistic".</h4>
@@ -26,7 +26,7 @@ This idea revolves around the fact that as of this writing, no such mods for ear
 - Copper items, tools and armor
 - Knives and saws serving as alternatives
 
-More details are in the [wiki](https://jayceecreates.github.io/earlygame/wiki).
+More details are in the [wiki](https://me.brynblack.github.io/primitiveprogression/wiki).
 
 ## Screenshots
 
@@ -51,7 +51,7 @@ More details are in the [wiki](https://jayceecreates.github.io/earlygame/wiki).
 
 ## Known Issues
 
-Incompatibilities and bugs can be reported in the [issues](https://github.com/JayCeeCreates/earlygame/issues) section.
+Incompatibilities and bugs can be reported in the [issues](https://github.com/me.brynblack/primitiveprogression/issues) section.
 
 ## Credits
 

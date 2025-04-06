@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "x x",
+        "xxx",
+        "xxx"
+    ],
+    "key": {
+        "x": {
+            "item": "minecraft:copper_ingot"
+        }
+    },
+    "result": {
+        "item": "primitiveprogression:copper_chestplate",
+        "count": 1
+    }
+}

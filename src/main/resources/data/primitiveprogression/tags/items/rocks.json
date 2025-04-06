@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "primitiveprogression:stone_rock",
+    "primitiveprogression:granite_rock",
+    "primitiveprogression:andesite_rock",
+    "primitiveprogression:diorite_rock",
+    "primitiveprogression:sandstone_rock",
+    "primitiveprogression:red_sandstone_rock"
+  ]
+}

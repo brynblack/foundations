@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "xy",
+        "yx"
+    ],
+    "key": {
+        "x": {
+            "item": "primitiveprogression:lashing"
+        },
+        "y": {
+            "tag": "c:sticks"
+        }
+    },
+    "result": {
+        "item": "primitiveprogression:fire_starter",
+        "count": 1
+    }
+}

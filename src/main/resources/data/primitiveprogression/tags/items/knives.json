@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+      "primitiveprogression:flint_knife",
+      "primitiveprogression:copper_knife",
+      "primitiveprogression:iron_knife",
+      "primitiveprogression:golden_knife",
+      "primitiveprogression:diamond_knife",
+      "primitiveprogression:netherite_knife"
+    ]
+}

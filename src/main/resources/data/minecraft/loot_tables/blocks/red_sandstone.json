@@ -37,7 +37,7 @@
                     "function": "minecraft:explosion_decay"
                   }
                 ],
-                "name": "earlygame:red_sandstone_rock"
+                "name": "primitiveprogression:red_sandstone_rock"
               }
             ]
           }

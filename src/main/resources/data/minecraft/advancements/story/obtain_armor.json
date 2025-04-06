@@ -62,7 +62,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "earlygame:copper_helmet" ]
+            "items": [ "primitiveprogression:copper_helmet" ]
           }
         ]
       }
@@ -72,7 +72,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "earlygame:copper_chestplate" ]
+            "items": [ "primitiveprogression:copper_chestplate" ]
           }
         ]
       }
@@ -82,7 +82,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "earlygame:copper_leggings" ]
+            "items": [ "primitiveprogression:copper_leggings" ]
           }
         ]
       }
@@ -92,7 +92,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "earlygame:copper_boots" ]
+            "items": [ "primitiveprogression:copper_boots" ]
           }
         ]
       }

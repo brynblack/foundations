@@ -1,13 +1,13 @@
 {
     "replace": false,
     "values": [
-        "earlygame:flint_axe",
-        "earlygame:flint_saw",
-        "earlygame:copper_axe",
-        "earlygame:copper_saw",
-        "earlygame:iron_saw",
-        "earlygame:golden_saw",
-        "earlygame:diamond_saw",
-        "earlygame:netherite_saw"
+        "primitiveprogression:flint_axe",
+        "primitiveprogression:flint_saw",
+        "primitiveprogression:copper_axe",
+        "primitiveprogression:copper_saw",
+        "primitiveprogression:iron_saw",
+        "primitiveprogression:golden_saw",
+        "primitiveprogression:diamond_saw",
+        "primitiveprogression:netherite_saw"
     ]
 }

@@ -1,10 +1,10 @@
 {
     "replace": false,
     "values": [
-      "earlygame:cobbled_granite",
-      "earlygame:cobbled_andesite",
-      "earlygame:cobbled_diorite",
-      "earlygame:cobbled_calcite",
-      "earlygame:cobbled_tuff"
+      "primitiveprogression:cobbled_granite",
+      "primitiveprogression:cobbled_andesite",
+      "primitiveprogression:cobbled_diorite",
+      "primitiveprogression:cobbled_calcite",
+      "primitiveprogression:cobbled_tuff"
     ]
   }

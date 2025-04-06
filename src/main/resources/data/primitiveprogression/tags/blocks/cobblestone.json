@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:cobblestone",
+      "primitiveprogression:cobbled_granite",
+      "primitiveprogression:cobbled_andesite",
+      "primitiveprogression:cobbled_diorite",
+      "minecraft:cobbled_deepslate",
+      "primitiveprogression:cobbled_calcite",
+      "primitiveprogression:cobbled_tuff"
+    ]
+  }

@@ -61,7 +61,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "earlygame:iron_knife" ]
+            "items": [ "primitiveprogression:iron_knife" ]
           }
         ]
       }
@@ -71,7 +71,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "earlygame:iron_saw" ]
+            "items": [ "primitiveprogression:iron_saw" ]
           }
         ]
       }

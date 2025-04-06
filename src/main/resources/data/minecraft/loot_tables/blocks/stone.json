@@ -46,7 +46,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "earlygame:stone_rock"
+                            "name": "primitiveprogression:stone_rock"
                         }
                     ]
                 }

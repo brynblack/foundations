@@ -46,7 +46,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "earlygame:tuff_rock"
+                            "name": "primitiveprogression:tuff_rock"
                         }
                     ]
                 }

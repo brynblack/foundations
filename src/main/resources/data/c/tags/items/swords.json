@@ -1,12 +1,12 @@
 {
     "replace": false,
     "values": [
-        "earlygame:flint_knife",
-        "earlygame:copper_sword",
-        "earlygame:copper_knife",
-        "earlygame:iron_knife",
-        "earlygame:golden_knife",
-        "earlygame:diamond_knife",
-        "earlygame:netherite_knife"
+        "primitiveprogression:flint_knife",
+        "primitiveprogression:copper_sword",
+        "primitiveprogression:copper_knife",
+        "primitiveprogression:iron_knife",
+        "primitiveprogression:golden_knife",
+        "primitiveprogression:diamond_knife",
+        "primitiveprogression:netherite_knife"
     ]
 }

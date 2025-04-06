@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "primitiveprogression:flint_shard"
+        },
+        "E": {
+            "item": "primitiveprogression:lashing"
+        },
+        "/": {
+            "tag": "c:sticks"
+        }
+    },
+    "result": {
+        "item": "primitiveprogression:flint_axe",
+        "count": 1
+    }
+}

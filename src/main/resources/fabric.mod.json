@@ -1,36 +1,36 @@
 {
     "schemaVersion": 1,
-    "id": "earlygame",
+    "id": "primitiveprogression",
     "version": "${version}",
 
-    "name": "EarlyGame",
+    "name": "PrimitiveProgression",
     "description": "A Fabric mod that focuses on changing early game progression that makes the gameplay feel more \"realistic\".",
     "authors": [
-        "JayCeeCreates"
+        "me.brynblack"
     ],
     "contact": {
-        "homepage": "https://jayceecreates.github.io/earlygame/",
-        "sources": "https://github.com/JayCeeCreates/earlygame/",
-        "issues": "https://github.com/JayCeeCreates/earlygame/issues/"
+        "homepage": "https://me.brynblack.github.io/primitiveprogression/",
+        "sources": "https://github.com/me.brynblack/primitiveprogression/",
+        "issues": "https://github.com/me.brynblack/primitiveprogression/issues/"
     },
 
     "license": "MIT",
-    "icon": "assets/earlygame/icon.png",
+    "icon": "assets/primitiveprogression/icon.png",
   
     "environment": "*",
     "entrypoints": {
         "main": [
-            "jayceecreates.earlygame.EarlyGame"
+            "me.brynblack.primitiveprogression.PrimitiveProgression"
         ],
         "client": [
-            "jayceecreates.earlygame.EarlyGameClient"
+            "me.brynblack.primitiveprogression.PrimitiveProgressionClient"
         ],
         "modmenu": [
-            "jayceecreates.earlygame.config.ModMenuIntegration"
+            "me.brynblack.primitiveprogression.config.ModMenuIntegration"
         ]
     },
     "mixins": [
-        "earlygame.mixins.json"
+        "primitiveprogression.mixins.json"
     ],
   
     "depends": {
@@ -42,9 +42,9 @@
     "custom": {
         "modmenu": {
             "links": {
-                "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/earlygame",
-                "modmenu.modrinth": "https://modrinth.com/mod/earlygame",
-                "modmenu.wiki": "https://jayceecreates.github.io/earlygame/wiki/home.html"
+                "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/primitiveprogression",
+                "modmenu.modrinth": "https://modrinth.com/mod/primitiveprogression",
+                "modmenu.wiki": "https://me.brynblack.github.io/primitiveprogression/wiki/home.html"
             }
         }
     }

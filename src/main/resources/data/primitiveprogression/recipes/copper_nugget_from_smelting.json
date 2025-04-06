@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": [
+      {
+        "item": "primitiveprogression:copper_pickaxe"
+      },
+      {
+        "item": "primitiveprogression:copper_shovel"
+      },
+      {
+        "item": "primitiveprogression:copper_axe"
+      },
+      {
+        "item": "primitiveprogression:copper_hoe"
+      },
+      {
+        "item": "primitiveprogression:copper_sword"
+      },
+      {
+        "item": "primitiveprogression:copper_knife"
+      },
+      {
+        "item": "primitiveprogression:copper_saw"
+      },
+      {
+        "item": "primitiveprogression:copper_helmet"
+      },
+      {
+        "item": "primitiveprogression:copper_chestplate"
+      },
+      {
+        "item": "primitiveprogression:copper_leggings"
+      },
+      {
+        "item": "primitiveprogression:copper_boots"
+      }
+    ],
+    "result": "primitiveprogression:copper_nugget",
+    "experience": 0.1,
+    "cookingtime": 200
+  }

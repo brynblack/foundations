@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "xx",
+        "xx"
+    ],
+    "key": {
+        "x": {
+            "item": "primitiveprogression:granite_rock"
+        }
+    },
+    "result": {
+        "item": "primitiveprogression:cobbled_granite",
+        "count": 1
+    }
+}

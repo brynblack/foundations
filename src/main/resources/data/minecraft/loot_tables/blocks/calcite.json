@@ -46,7 +46,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "earlygame:calcite_rock"
+                            "name": "primitiveprogression:calcite_rock"
                         }
                     ]
                 }

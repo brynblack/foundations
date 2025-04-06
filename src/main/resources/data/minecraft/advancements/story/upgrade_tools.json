@@ -2,7 +2,7 @@
   "parent": "minecraft:story/smelt_copper",
   "display": {
     "icon": {
-      "item": "earlygame:copper_pickaxe",
+      "item": "primitiveprogression:copper_pickaxe",
       "nbt": "{Damage:0}"
     },
     "title": {
@@ -22,7 +22,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "earlygame:copper_pickaxe" ]
+            "items": [ "primitiveprogression:copper_pickaxe" ]
           }
         ]
       }
