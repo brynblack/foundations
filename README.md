@@ -1,8 +1,6 @@
+<img align="center" src="https://github.com/user-attachments/assets/7eaa65e6-0732-4c3a-ba1b-376a2c04c63b">
 <h4 align="center">A Fabric mod that focuses on changing early game progression that makes the gameplay feel more "realistic".</h4>
-
-## Background
-
-This idea revolves around the fact that as of this writing, no such mods for early game realism are present in the Fabric mod database. Then I thought, "Fine, I'll do it myself." Moreover, it was inspired by two particular Forge mods that have the same premise, namely [No Tree Punching](https://www.curseforge.com/minecraft/mc-mods/no-tree-punching) and [Natural Progression](https://www.curseforge.com/minecraft/mc-mods/natural-progressions).
+<h5 align="center">Forked and ported from <a href="https://github.com/JayCeeCreates/earlygame">EarlyGame</a></h5>
 
 ## Features
 
