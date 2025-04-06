@@ -61,7 +61,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "primitiveprogression:iron_knife" ]
+            "items": [ "foundations:iron_knife" ]
           }
         ]
       }
@@ -71,7 +71,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "primitiveprogression:iron_saw" ]
+            "items": [ "foundations:iron_saw" ]
           }
         ]
       }

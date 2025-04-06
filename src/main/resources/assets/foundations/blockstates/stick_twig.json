@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "foundations:block/stick_twig"
+            },
+            {
+                "model": "foundations:block/stick_twig",
+                "y": 90
+            },
+            {
+                "model": "foundations:block/stick_twig",
+                "y": 180
+            },
+            {
+                "model": "foundations:block/stick_twig",
+                "y": 270
+            }
+        ]
+    }
+}

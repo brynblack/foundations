@@ -1,12 +1,12 @@
 {
     "replace": false,
     "values": [
-        "primitiveprogression:flint_knife",
-        "primitiveprogression:copper_sword",
-        "primitiveprogression:copper_knife",
-        "primitiveprogression:iron_knife",
-        "primitiveprogression:golden_knife",
-        "primitiveprogression:diamond_knife",
-        "primitiveprogression:netherite_knife"
+        "foundations:flint_knife",
+        "foundations:copper_sword",
+        "foundations:copper_knife",
+        "foundations:iron_knife",
+        "foundations:golden_knife",
+        "foundations:diamond_knife",
+        "foundations:netherite_knife"
     ]
 }

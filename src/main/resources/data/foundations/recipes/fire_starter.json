@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "xy",
+        "yx"
+    ],
+    "key": {
+        "x": {
+            "item": "foundations:lashing"
+        },
+        "y": {
+            "tag": "c:sticks"
+        }
+    },
+    "result": {
+        "item": "foundations:fire_starter",
+        "count": 1
+    }
+}

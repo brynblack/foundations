@@ -1,10 +1,10 @@
 {
     "replace": false,
     "values": [
-      "primitiveprogression:cobbled_granite",
-      "primitiveprogression:cobbled_andesite",
-      "primitiveprogression:cobbled_diorite",
-      "primitiveprogression:cobbled_calcite",
-      "primitiveprogression:cobbled_tuff"
+      "foundations:cobbled_granite",
+      "foundations:cobbled_andesite",
+      "foundations:cobbled_diorite",
+      "foundations:cobbled_calcite",
+      "foundations:cobbled_tuff"
     ]
   }

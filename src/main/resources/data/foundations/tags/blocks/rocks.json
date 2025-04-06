@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "foundations:stone_rock_block",
+        "foundations:granite_rock_block",
+        "foundations:andesite_rock_block",
+        "foundations:diorite_rock_block",
+        "foundations:sandstone_rock_block",
+        "foundations:red_sandstone_rock_block"
+    ]
+}

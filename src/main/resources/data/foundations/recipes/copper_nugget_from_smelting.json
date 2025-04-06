@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": [
+      {
+        "item": "foundations:copper_pickaxe"
+      },
+      {
+        "item": "foundations:copper_shovel"
+      },
+      {
+        "item": "foundations:copper_axe"
+      },
+      {
+        "item": "foundations:copper_hoe"
+      },
+      {
+        "item": "foundations:copper_sword"
+      },
+      {
+        "item": "foundations:copper_knife"
+      },
+      {
+        "item": "foundations:copper_saw"
+      },
+      {
+        "item": "foundations:copper_helmet"
+      },
+      {
+        "item": "foundations:copper_chestplate"
+      },
+      {
+        "item": "foundations:copper_leggings"
+      },
+      {
+        "item": "foundations:copper_boots"
+      }
+    ],
+    "result": "foundations:copper_nugget",
+    "experience": 0.1,
+    "cookingtime": 200
+  }

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "foundations:block/deepslate_rock_block"
+        }
+    }
+}

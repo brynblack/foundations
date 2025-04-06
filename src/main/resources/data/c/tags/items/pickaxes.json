@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "primitiveprogression:flint_pickaxe",
-        "primitiveprogression:copper_pickaxe"
+        "foundations:flint_pickaxe",
+        "foundations:copper_pickaxe"
     ]
 }

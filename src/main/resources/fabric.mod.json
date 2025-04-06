@@ -1,36 +1,35 @@
 {
     "schemaVersion": 1,
-    "id": "primitiveprogression",
+    "id": "foundations",
     "version": "${version}",
 
-    "name": "PrimitiveProgression",
-    "description": "A Fabric mod that focuses on changing early game progression that makes the gameplay feel more \"realistic\".",
+    "name": "Foundations",
+    "description": "A Fabric mod that focuses on changing early game progression that makes the gameplay feel more \"realistic\". Port of EarlyGame for modern versions.",
     "authors": [
         "me.brynblack"
     ],
     "contact": {
-        "homepage": "https://me.brynblack.github.io/primitiveprogression/",
-        "sources": "https://github.com/me.brynblack/primitiveprogression/",
-        "issues": "https://github.com/me.brynblack/primitiveprogression/issues/"
+        "sources": "https://github.com/brynblack/foundations",
+        "issues": "https://github.com/brynblack/foundations/issues"
     },
 
     "license": "MIT",
-    "icon": "assets/primitiveprogression/icon.png",
+    "icon": "assets/foundations/icon.png",
   
     "environment": "*",
     "entrypoints": {
         "main": [
-            "me.brynblack.primitiveprogression.PrimitiveProgression"
+            "me.brynblack.foundations.Foundations"
         ],
         "client": [
-            "me.brynblack.primitiveprogression.PrimitiveProgressionClient"
+            "me.brynblack.foundations.FoundationsClient"
         ],
         "modmenu": [
-            "me.brynblack.primitiveprogression.config.ModMenuIntegration"
+            "me.brynblack.foundations.config.ModMenuIntegration"
         ]
     },
     "mixins": [
-        "primitiveprogression.mixins.json"
+        "foundations.mixins.json"
     ],
   
     "depends": {
@@ -42,9 +41,9 @@
     "custom": {
         "modmenu": {
             "links": {
-                "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/primitiveprogression",
-                "modmenu.modrinth": "https://modrinth.com/mod/primitiveprogression",
-                "modmenu.wiki": "https://me.brynblack.github.io/primitiveprogression/wiki/home.html"
+                "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/foundations",
+                "modmenu.modrinth": "https://modrinth.com/mod/foundations",
+                "modmenu.wiki": "https://me.brynblack.github.io/foundations/wiki/home.html"
             }
         }
     }

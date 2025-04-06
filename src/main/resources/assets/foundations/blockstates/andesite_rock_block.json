@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "foundations:block/andesite_rock_block"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "foundations:fire_starter"
+        ]
+    },
+    "criteria": {
+        "has_lashing": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [ "foundations:lashing" ]
+                    }
+                ]
+            }
+        },
+        "has_stick": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "c:sticks"
+                    }
+                ]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "foundations:fire_starter"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_lashing",
+            "has_stick",
+            "has_the_recipe"
+        ]
+    ]
+}

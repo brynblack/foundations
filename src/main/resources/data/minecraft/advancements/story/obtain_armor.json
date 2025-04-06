@@ -62,7 +62,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "primitiveprogression:copper_helmet" ]
+            "items": [ "foundations:copper_helmet" ]
           }
         ]
       }
@@ -72,7 +72,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "primitiveprogression:copper_chestplate" ]
+            "items": [ "foundations:copper_chestplate" ]
           }
         ]
       }
@@ -82,7 +82,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "primitiveprogression:copper_leggings" ]
+            "items": [ "foundations:copper_leggings" ]
           }
         ]
       }
@@ -92,7 +92,7 @@
       "conditions": {
         "items": [
           {
-            "items": [ "primitiveprogression:copper_boots" ]
+            "items": [ "foundations:copper_boots" ]
           }
         ]
       }

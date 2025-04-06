@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "foundations:block/calcite_rock_block"
+        }
+    }
+}

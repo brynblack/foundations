@@ -46,7 +46,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "primitiveprogression:diorite_rock"
+                            "name": "foundations:diorite_rock"
                         }
                     ]
                 }

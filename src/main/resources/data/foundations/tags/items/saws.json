@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+      "foundations:flint_saw",
+      "foundations:copper_saw",
+      "foundations:iron_saw",
+      "foundations:golden_saw",
+      "foundations:diamond_saw",
+      "foundations:netherite_saw"
+    ]
+}

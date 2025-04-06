@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "foundations:block/diorite_rock_block"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "x",
+        "y"
+    ],
+    "key": {
+        "x": {
+            "item": "minecraft:diamond"
+        },
+        "y": {
+            "tag": "c:sticks"
+        }
+    },
+    "result": {
+        "item": "foundations:diamond_knife",
+        "count": 1
+    }
+}

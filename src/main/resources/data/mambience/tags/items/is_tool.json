@@ -1,12 +1,12 @@
 {
     "replace": false,
     "values": [
-        "primitiveprogression:flint_axe",
-        "primitiveprogression:flint_pickaxe",
-        "primitiveprogression:copper_axe",
-        "primitiveprogression:copper_pickaxe",
-        "primitiveprogression:copper_shovel",
-        "primitiveprogression:copper_hoe",
-        "#primitiveprogression:saws"
+        "foundations:flint_axe",
+        "foundations:flint_pickaxe",
+        "foundations:copper_axe",
+        "foundations:copper_pickaxe",
+        "foundations:copper_shovel",
+        "foundations:copper_hoe",
+        "#foundations:saws"
     ]
 }

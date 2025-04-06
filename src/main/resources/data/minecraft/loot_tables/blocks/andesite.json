@@ -46,7 +46,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "primitiveprogression:andesite_rock"
+                            "name": "foundations:andesite_rock"
                         }
                     ]
                 }

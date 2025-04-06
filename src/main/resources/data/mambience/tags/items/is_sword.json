@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "primitiveprogression:copper_sword",
-        "#primitiveprogression:knives"
+        "foundations:copper_sword",
+        "#foundations:knives"
     ]
 }

@@ -2,7 +2,7 @@
   "parent": "minecraft:story/root",
   "display": {
     "icon": {
-      "item": "primitiveprogression:flint_pickaxe",
+      "item": "foundations:flint_pickaxe",
       "nbt": "{Damage:0}"
     },
     "title": {

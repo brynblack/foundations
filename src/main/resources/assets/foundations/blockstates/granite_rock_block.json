@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "foundations:block/granite_rock_block"
+        }
+    }
+}

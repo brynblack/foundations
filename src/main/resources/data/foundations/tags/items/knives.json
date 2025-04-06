@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+      "foundations:flint_knife",
+      "foundations:copper_knife",
+      "foundations:iron_knife",
+      "foundations:golden_knife",
+      "foundations:diamond_knife",
+      "foundations:netherite_knife"
+    ]
+}

@@ -46,7 +46,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "primitiveprogression:tuff_rock"
+                            "name": "foundations:tuff_rock"
                         }
                     ]
                 }

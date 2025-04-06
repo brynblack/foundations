@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "foundations:flint_axe",
+        "foundations:copper_axe",
+        "minecraft:iron_axe",
+        "minecraft:golden_axe",
+        "minecraft:diamond_axe",
+        "minecraft:netherite_axe"
+    ]
+}

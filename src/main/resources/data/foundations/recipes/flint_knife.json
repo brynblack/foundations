@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "x",
+        "y"
+    ],
+    "key": {
+        "x": {
+            "item": "foundations:flint_shard"
+        },
+        "y": {
+            "tag": "c:sticks"
+        }
+    },
+    "result": {
+        "item": "foundations:flint_knife",
+        "count": 1
+    }
+}

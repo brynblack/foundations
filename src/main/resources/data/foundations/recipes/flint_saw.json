@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  y",
+        " zx",
+        "yx "
+    ],
+    "key": {
+        "x": {
+            "item": "foundations:flint_shard"
+        },
+        "y": {
+            "tag": "c:sticks"
+        },
+        "z": {
+            "item": "foundations:lashing"
+        }
+    },
+    "result": {
+        "item": "foundations:flint_saw",
+        "count": 1
+    }
+}

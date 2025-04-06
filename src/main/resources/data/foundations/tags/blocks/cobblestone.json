@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:cobblestone",
+      "foundations:cobbled_granite",
+      "foundations:cobbled_andesite",
+      "foundations:cobbled_diorite",
+      "minecraft:cobbled_deepslate",
+      "foundations:cobbled_calcite",
+      "foundations:cobbled_tuff"
+    ]
+  }

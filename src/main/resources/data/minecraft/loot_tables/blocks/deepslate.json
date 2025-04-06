@@ -46,7 +46,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "primitiveprogression:deepslate_rock"
+                            "name": "foundations:deepslate_rock"
                         }
                     ]
                 }

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#E",
+        " /"
+    ],
+    "key": {
+        "#": {
+            "item": "foundations:flint_shard"
+        },
+        "E": {
+            "item": "foundations:lashing"
+        },
+        "/": {
+            "tag": "c:sticks"
+        }
+    },
+    "result": {
+        "item": "foundations:flint_axe",
+        "count": 1
+    }
+}
