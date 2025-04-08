@@ -17,7 +17,7 @@ public class DisableWoodStoneTools {
   public static void noStoneWoodTier() {
 
     UseBlockCallback.EVENT.register(
-        (player, _, _, _) -> {
+        (player, world, hand, block) -> {
           if (player == null) return ActionResult.PASS;
 
           ItemStack itemHeld = player.getInventory().getMainHandStack();
@@ -49,7 +49,7 @@ public class DisableWoodStoneTools {
         });
 
     UseEntityCallback.EVENT.register(
-        (player, _, _, _, _) -> {
+        (player, world, hand, entity, hit) -> {
           if (player == null) return ActionResult.PASS;
 
           ItemStack itemHeld = player.getInventory().getMainHandStack();
@@ -81,7 +81,7 @@ public class DisableWoodStoneTools {
         });
 
     AttackBlockCallback.EVENT.register(
-        (player, world, _, pos, _) -> {
+        (player, world, hand, pos, direction) -> {
           if (world.getBlockState(pos) == null || player == null) {
             return ActionResult.PASS;
           }
@@ -115,7 +115,7 @@ public class DisableWoodStoneTools {
         });
 
     AttackEntityCallback.EVENT.register(
-        (player, _, _, _, _) -> {
+        (player, world, hand, entity, hitResult) -> {
           if (player == null) return ActionResult.PASS;
 
           ItemStack itemHeld = player.getInventory().getMainHandStack();

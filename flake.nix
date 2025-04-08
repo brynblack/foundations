@@ -9,7 +9,7 @@
       let pkgs = import nixpkgs { inherit system; };
       in {
         devShell = pkgs.mkShell {
-          buildInputs = with pkgs; [ jdk23 ];
+          buildInputs = with pkgs; [ jdk21 ];
           shellHook = "export LD_LIBRARY_PATH=${
               pkgs.lib.makeLibraryPath (with pkgs; [ libGL libpulseaudio ])
             }:$LD_LIBRARY_PATH";
