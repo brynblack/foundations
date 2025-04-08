@@ -40,16 +40,10 @@ public abstract class BlockMiningMixin extends LivingEntity {
     }
 
     if (!player.isCreative()) {
-      boolean isStone =
-          (state.getMaterial().equals(Material.STONE)
-                  || state.getMaterial().equals(Material.REPAIR_STATION)
-                  || state.getMaterial().equals(Material.METAL))
-              && !state.isIn(ModBlockTags.ROCKS);
+    boolean isStone =
+        (state.isIn(ModBlockTags.STONE_LIKE)) && !state.isIn(ModBlockTags.ROCKS);
       boolean isWood =
-          (state.getMaterial().equals(Material.WOOD)
-                  || state.getMaterial().equals(Material.NETHER_WOOD)
-                  || state.getMaterial().equals(Material.BAMBOO))
-              && !state.equals(BlocksInit.STICK_TWIG_BLOCK.getDefaultState());
+(state.isIn(ModBlockTags.STONE_LIKE)) && !state.equals(BlocksInit.STICK_TWIG_BLOCK.getDefaultState());
       boolean isBlacklisted = state.isIn(ModBlockTags.BLACKLISTED_BLOCKS);
       if (isStone)
         if (!isBlacklisted
@@ -65,8 +59,8 @@ public abstract class BlockMiningMixin extends LivingEntity {
           cir.setReturnValue(0.0F);
           if (player.getInventory().getMainHandStack().isEmpty()
               && rand <= Foundations.CONFIG.damageProbability * .01)
-            if (!isBlacklisted) player.damage(new MiningDamageSource.BrokenHandDamage(), 2.0F);
-            else player.damage(new MiningDamageSource.SplinterDamage(), 1.0F);
+            if (!isBlacklisted) player.damage(player.getServer().getWorld(null), MiningDamageSource.brokenHand(getEntityWorld()), 2.0F);
+            else player.damage(player.getServer().getWorld(null), MiningDamageSource.splinter(getEntityWorld()), 1.0F);
         }
 
       if (isWood)
@@ -83,8 +77,8 @@ public abstract class BlockMiningMixin extends LivingEntity {
           cir.setReturnValue(0.0F);
           if (player.getInventory().getMainHandStack().isEmpty()
               && rand <= Foundations.CONFIG.damageProbability * .01)
-            if (!isBlacklisted) player.damage(new MiningDamageSource.SplinterDamage(), 1.0F);
-            else player.damage(new MiningDamageSource.BrokenHandDamage(), 2.0F);
+            if (!isBlacklisted) player.damage(null, MiningDamageSource.splinter(getEntityWorld()), 1.0F);
+            else player.damage(null, MiningDamageSource.brokenHand(getEntityWorld()), 2.0F);
         }
     }
   }

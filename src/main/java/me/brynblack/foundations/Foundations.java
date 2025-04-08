@@ -38,13 +38,13 @@ public class Foundations implements ModInitializer {
       BiomeModifications.addFeature(
           BiomeSelectors.foundInOverworld(),
           GenerationStep.Feature.VEGETAL_DECORATION,
-          ModPlacedFeatures.ROCK_BLOCK.getKey().get());
+          ModPlacedFeatures.ROCK_BLOCK_PLACED_KEY);
     }
     if (CONFIG.generateSticks) {
       BiomeModifications.addFeature(
           BiomeSelectors.foundInOverworld(),
           GenerationStep.Feature.VEGETAL_DECORATION,
-          ModPlacedFeatures.STICK_TWIG.getKey().get());
+          ModPlacedFeatures.STICK_TWIG_PLACED_KEY);
     }
   }
 }

@@ -19,7 +19,6 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -43,7 +42,6 @@ public class RockBlock extends Block implements Waterloggable {
         AbstractBlock.Settings.create()
             .strength(0.15F, 0.15F)
             .sounds(BlockSoundGroup.STONE)
-            .noCollision()
             .noCollision()
             .mapColor(MapColor.LIGHT_GRAY)
             .offset(AbstractBlock.OffsetType.XZ));
@@ -129,13 +127,14 @@ public class RockBlock extends Block implements Waterloggable {
   public BlockState getStateForNeighborUpdate(
       BlockState state, WorldView world, ScheduledTickView tickView, BlockPos pos, Direction direction,
       BlockPos neighborPos, BlockState neighborState, Random random) {
-    if (state.get(WATERLOGGED)) {
-      world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
+
+    if (state.get(WATERLOGGED) && world instanceof WorldAccess worldAccess) {
+      worldAccess.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(worldAccess));
     }
-    return super.getStateForNeighborUpdate(neighborState, world, tickView, neighborPos, direction, neighborPos, neighborState, random);
+
+    return super.getStateForNeighborUpdate(state, world, tickView, pos, direction, neighborPos, neighborState, random);
   }
 
-  @Override
   public boolean canPathfindThrough(
       BlockState state, BlockView world, BlockPos pos, NavigationType type) {
     if (type == NavigationType.WATER) {

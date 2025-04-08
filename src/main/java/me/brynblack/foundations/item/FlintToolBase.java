@@ -1,37 +1,16 @@
 package me.brynblack.foundations.item;
 
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 
-public class FlintToolBase implements ToolMaterial {
-
-  @Override
-  public int getDurability() {
-    return 20;
-  }
-
-  @Override
-  public float getMiningSpeedMultiplier() {
-    return 2.0f;
-  }
-
-  @Override
-  public float getAttackDamage() {
-    return 0f;
-  }
-
-  @Override
-  public int getMiningLevel() {
-    return 0;
-  }
-
-  @Override
-  public int getEnchantability() {
-    return 0;
-  }
-
-  @Override
-  public Ingredient getRepairIngredient() {
-    return null;
-  }
+public class FlintToolBase {
+  public static final ToolMaterial FLINT = new ToolMaterial(
+    BlockTags.INCORRECT_FOR_WOODEN_TOOL,
+    20,
+    2.0f,
+    0.0f,
+    0,
+    ItemTags.STONE_TOOL_MATERIALS
+  );
 }

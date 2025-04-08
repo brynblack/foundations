@@ -1,38 +1,21 @@
 package me.brynblack.foundations.item;
 
-import net.minecraft.item.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
-public class CopperToolBase implements ToolMaterial {
+public class CopperToolBase {
+  public static final TagKey<Item> COPPER_TOOL_MATERIALS = TagKey.of(RegistryKeys.ITEM, Identifier.of("foundations", "copper_tool_materials"));
 
-  @Override
-  public int getDurability() {
-    return 131;
-  }
-
-  @Override
-  public float getMiningSpeedMultiplier() {
-    return 4.0f;
-  }
-
-  @Override
-  public float getAttackDamage() {
-    return 1.0f;
-  }
-
-  @Override
-  public int getMiningLevel() {
-    return 1;
-  }
-
-  @Override
-  public int getEnchantability() {
-    return 5;
-  }
-
-  @Override
-  public Ingredient getRepairIngredient() {
-    return Ingredient.ofItems(Items.COPPER_INGOT);
-  }
+  public static final ToolMaterial COPPER = new ToolMaterial(
+    BlockTags.INCORRECT_FOR_IRON_TOOL,
+    131,
+    4.0f,
+    1.0f,
+    5,
+    COPPER_TOOL_MATERIALS
+  );
 }

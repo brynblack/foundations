@@ -5,10 +5,11 @@ import me.brynblack.foundations.armor.CopperArmorBase;
 import me.brynblack.foundations.item.*;
 import me.brynblack.foundations.item.tool.base_tools.*;
 import me.brynblack.foundations.item.tool.flint_tier.*;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.equipment.ArmorMaterial;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -50,7 +51,7 @@ public class ItemsInit {
       NETHERITE_KNIFE,
       NETHERITE_SAW;
 
-  public static final ArmorMaterial COPPER_ARMOR = new CopperArmorBase();
+  public static final ArmorMaterial COPPER_ARMOR = CopperArmorBase.COPPER;
 
   private static void register(String name, Item item) {
     Registry.register(Registries.ITEM, Identifier.of("foundations", name), item);
@@ -123,25 +124,25 @@ public class ItemsInit {
         "copper_helmet",
         new BaseArmor(
             COPPER_ARMOR,
-            EquipmentSlot.HEAD,
+            EquipmentType.HELMET,
             new Item.Settings()));
     register(
         "copper_chestplate",
         new BaseArmor(
             COPPER_ARMOR,
-            EquipmentSlot.CHEST,
+            EquipmentType.CHESTPLATE,
             new Item.Settings()));
     register(
         "copper_leggings",
         new BaseArmor(
             COPPER_ARMOR,
-            EquipmentSlot.LEGS,
+            EquipmentType.LEGGINGS,
             new Item.Settings()));
     register(
         "copper_boots",
         new BaseArmor(
             COPPER_ARMOR,
-            EquipmentSlot.FEET,
+            EquipmentType.BOOTS,
             new Item.Settings()));
 
     // iron
@@ -216,71 +217,71 @@ public class ItemsInit {
     FLINT_SHARD = new Item(new Item.Settings());
     FLINT_KNIFE =
         new FlintKnife(
-            new FlintToolBase(), new Item.Settings());
+            FlintToolBase.FLINT, new Item.Settings());
     FLINT_PICKAXE =
         new FlintPickaxe(
-            new FlintToolBase(), new Item.Settings());
+            FlintToolBase.FLINT, new Item.Settings());
     FLINT_AXE =
         new FlintAxe(
-            new FlintToolBase(), new Item.Settings());
+            FlintToolBase.FLINT, new Item.Settings());
     FLINT_SAW =
         new FlintSaw(
-            new FlintToolBase(), new Item.Settings());
+            FlintToolBase.FLINT, new Item.Settings());
 
     // copper
     COPPER_NUGGET = new Item(new Item.Settings());
     COPPER_SWORD =
         new SwordBase(
-            new CopperToolBase(), new Item.Settings());
+            CopperToolBase.COPPER, new Item.Settings());
     COPPER_KNIFE =
         new KnifeBase(
-            new CopperToolBase(), new Item.Settings());
+            CopperToolBase.COPPER, new Item.Settings());
     COPPER_SHOVEL =
         new ShovelBase(
-            new CopperToolBase(), new Item.Settings());
+            CopperToolBase.COPPER, new Item.Settings());
     COPPER_PICKAXE =
         new PickaxeBase(
-            new CopperToolBase(), new Item.Settings());
+            CopperToolBase.COPPER, new Item.Settings());
     COPPER_AXE =
         new AxeBase(
-            new CopperToolBase(), new Item.Settings());
+            CopperToolBase.COPPER, new Item.Settings());
     COPPER_SAW =
         new SawBase(
-            new CopperToolBase(), new Item.Settings());
+            CopperToolBase.COPPER, new Item.Settings());
     COPPER_HOE =
         new HoeBase(
-            new CopperToolBase(), new Item.Settings());
+            CopperToolBase.COPPER, new Item.Settings());
 
     // iron
     IRON_KNIFE =
         new KnifeBase(
-            ToolMaterials.IRON, new Item.Settings());
+            ToolMaterial.IRON, new Item.Settings());
     IRON_SAW =
         new SawBase(
-            ToolMaterials.IRON, new Item.Settings());
+            ToolMaterial.IRON, new Item.Settings());
 
     // gold
     GOLDEN_KNIFE =
         new KnifeBase(
-            ToolMaterials.GOLD, new Item.Settings());
+            ToolMaterial.GOLD, new Item.Settings());
     GOLDEN_SAW =
         new SawBase(
-            ToolMaterials.GOLD, new Item.Settings());
+            ToolMaterial.GOLD, new Item.Settings());
 
     // diamond
     DIAMOND_KNIFE =
         new KnifeBase(
-            ToolMaterials.DIAMOND, new Item.Settings());
+            ToolMaterial.DIAMOND, new Item.Settings());
     DIAMOND_SAW =
         new SawBase(
-            ToolMaterials.DIAMOND, new Item.Settings());
+            ToolMaterial.DIAMOND, new Item.Settings());
 
     // netherite
     NETHERITE_KNIFE =
         new KnifeBase(
-            ToolMaterials.NETHERITE, new Item.Settings());
+            ToolMaterial.NETHERITE, new Item.Settings());
     NETHERITE_SAW =
         new SawBase(
-            ToolMaterials.NETHERITE, new Item.Settings());
+            ToolMaterial.NETHERITE, new Item.Settings());
   }
 }

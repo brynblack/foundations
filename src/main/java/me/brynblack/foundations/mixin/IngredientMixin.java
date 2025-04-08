@@ -1,21 +1,21 @@
-package me.brynblack.foundations.mixin;
+// package me.brynblack.foundations.mixin;
 
-import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.Ingredient;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
+// import net.minecraft.item.ItemStack;
+// import net.minecraft.recipe.Ingredient;
+// import org.spongepowered.asm.mixin.Mixin;
+// import org.spongepowered.asm.mixin.Shadow;
 
-@Mixin(Ingredient.class)
-public abstract class IngredientMixin implements MatchingStackAccessor {
+// @Mixin(Ingredient.class)
+// public abstract class IngredientMixin implements MatchingStackAccessor {
 
-  @Shadow
-  protected abstract void cacheMatchingStacks();
+//   @Shadow
+//   protected abstract void cacheMatchingStacks();
 
-  @Shadow private ItemStack[] matchingStacks;
+//   @Shadow private ItemStack[] matchingStacks;
 
-  @Override
-  public ItemStack[] getMatchingStacks() {
-    cacheMatchingStacks();
-    return matchingStacks;
-  }
-}
+//   @Override
+//   public ItemStack[] getMatchingStacks() {
+//     cacheMatchingStacks();
+//     return matchingStacks;
+//   }
+// }

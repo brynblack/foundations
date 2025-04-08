@@ -5,6 +5,7 @@ import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CampfireBlock;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -45,12 +46,12 @@ public class FireStarterItem extends Item {
         context
             .getStack()
             .damage(
-                1, (LivingEntity) playerEntity, (p -> p.sendToolBreakStatus(context.getHand())));
+                1, (LivingEntity) playerEntity, EquipmentSlot.MAINHAND);
       }
-      return ActionResult.success(world.isClient());
+      return ActionResult.SUCCESS;
     } else {
       BlockPos blockPos2 = blockPos.offset(context.getSide());
-      if (AbstractFireBlock.canPlaceAt(world, blockPos2, context.getPlayerFacing())) {
+      if (AbstractFireBlock.canPlaceAt(world, blockPos2, context.getHorizontalPlayerFacing())) {
         world.playSound(
             playerEntity,
             blockPos2,
@@ -66,9 +67,9 @@ public class FireStarterItem extends Item {
         if (playerEntity instanceof ServerPlayerEntity) {
           Criteria.PLACED_BLOCK.trigger((ServerPlayerEntity) playerEntity, blockPos2, itemStack);
           itemStack.damage(
-              1, (LivingEntity) playerEntity, (p -> p.sendToolBreakStatus(context.getHand())));
+              1, (LivingEntity) playerEntity, EquipmentSlot.MAINHAND);
         }
-        return ActionResult.success(world.isClient());
+        return ActionResult.SUCCESS;
       } else return ActionResult.FAIL;
     }
   }

@@ -2,13 +2,10 @@
     "required": true,
     "minVersion": "0.8",
     "package": "me.brynblack.foundations.mixin",
-    "compatibilityLevel": "JAVA_23",
+    "compatibilityLevel": "JAVA_21",
     "mixins": [
         "BlockMiningMixin",
-        "CopperMiningMixin",
-        "IngredientMixin",
-        "MatchingStackAccessor",
-        "RecipeFieldAccessor"
+        "CopperMiningMixin"
     ],
     "client": [
     ],

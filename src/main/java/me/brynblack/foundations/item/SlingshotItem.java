@@ -6,30 +6,33 @@ import me.brynblack.foundations.entity.RockEntity;
 import me.brynblack.foundations.init.ItemsInit;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.consume.UseAction;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 
-public class SlingshotItem extends ModRangedWeaponItem implements Vanishable {
+public class SlingshotItem extends ModRangedWeaponItem {
 
   public SlingshotItem(Item.Settings settings) {
     super(settings);
   }
 
   @Override
-  public void onStoppedUsing(
+  public boolean onStoppedUsing(
       ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
-    int i = this.getMaxUseTime(stack) - remainingUseTicks;
+    int i = this.getMaxUseTime(stack, user) - remainingUseTicks;
     float f = getPullProgress(i);
 
-    if (!(user instanceof PlayerEntity playerEntity)) return;
+    if (!(user instanceof PlayerEntity playerEntity)) return false;
 
     boolean bl =
         playerEntity.getAbilities().creativeMode
@@ -42,15 +45,15 @@ public class SlingshotItem extends ModRangedWeaponItem implements Vanishable {
                 > 0;
     ItemStack itemStack = getRockType(playerEntity, stack);
 
-    if (itemStack.isEmpty() && !bl) return;
+    if (itemStack.isEmpty() && !bl) return false;
 
     if (itemStack.isEmpty()) {
-      if (!bl) return;
+      if (!bl) return false;
       itemStack = new ItemStack(ItemsInit.STONE_ROCK);
     }
 
     if ((double) f < 0.1D) {
-      return;
+      return false;
     }
 
     boolean bl2 = bl && itemStack.isOf(ItemsInit.STONE_ROCK);
@@ -73,7 +76,7 @@ public class SlingshotItem extends ModRangedWeaponItem implements Vanishable {
                   .getOrThrow(Enchantments.PUNCH),
               stack);
 
-      RockEntity rockEntity = new RockEntity(world, user);
+      RockEntity rockEntity = new RockEntity(world, user, stack);
       rockEntity.setItem(itemStack);
       rockEntity.setVelocity(
           playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, 1.5f, 1.0f);
@@ -92,7 +95,7 @@ public class SlingshotItem extends ModRangedWeaponItem implements Vanishable {
           > 0) {
         rockEntity.setOnFireFor(100);
       }
-      stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
+      stack.damage(1, playerEntity, EquipmentSlot.MAINHAND);
 
       world.spawnEntity(rockEntity);
     }
@@ -115,6 +118,7 @@ public class SlingshotItem extends ModRangedWeaponItem implements Vanishable {
         1.0F / (world.getRandom().nextFloat() * 0.4F + 1.2F) + f * 0.5F);
 
     playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
+    return bl2;
   }
 
   public static float getPullProgress(int useTicks) {
@@ -126,7 +130,7 @@ public class SlingshotItem extends ModRangedWeaponItem implements Vanishable {
   }
 
   @Override
-  public int getMaxUseTime(ItemStack stack) {
+  public int getMaxUseTime(ItemStack stack, LivingEntity entity) {
     return 72000;
   }
 
@@ -136,14 +140,14 @@ public class SlingshotItem extends ModRangedWeaponItem implements Vanishable {
   }
 
   @Override
-  public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+  public ActionResult use(World world, PlayerEntity user, Hand hand) {
     ItemStack itemStack = user.getStackInHand(hand);
     boolean bl = !getRockType(user, itemStack).isEmpty();
     if (user.getAbilities().creativeMode || bl) {
       user.setCurrentHand(hand);
-      return TypedActionResult.consume(itemStack);
+      return ActionResult.CONSUME;
     }
-    return TypedActionResult.fail(itemStack);
+    return ActionResult.FAIL;
   }
 
   public ItemStack getRockType(PlayerEntity player, ItemStack stack) {

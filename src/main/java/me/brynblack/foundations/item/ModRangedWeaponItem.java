@@ -31,10 +31,5 @@ public abstract class ModRangedWeaponItem extends Item {
     return ItemStack.EMPTY;
   }
 
-  @Override
-  public int getEnchantability() {
-    return 1;
-  }
-
   public abstract int getRange();
 }

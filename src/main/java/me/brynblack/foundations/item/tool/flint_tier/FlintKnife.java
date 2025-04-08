@@ -18,7 +18,7 @@ public class FlintKnife extends SwordItem {
   @Override
   public boolean postMine(
       ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-    stack.damage(1, miner, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+    stack.damage(1, miner, EquipmentSlot.MAINHAND);
     return true;
   }
 }

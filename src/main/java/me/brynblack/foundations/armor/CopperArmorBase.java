@@ -1,60 +1,29 @@
 package me.brynblack.foundations.armor;
 
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.Items;
+import java.util.Map;
+
 import net.minecraft.item.equipment.ArmorMaterial;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.sound.SoundEvent;
+import net.minecraft.item.equipment.EquipmentType;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Identifier;
 
-public class CopperArmorBase implements ArmorMaterial {
+public class CopperArmorBase {
 
-  private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
+  public static final ArmorMaterial COPPER = new ArmorMaterial(
+      11,
+      Map.of(
+          EquipmentType.HELMET, 1,
+          EquipmentType.CHESTPLATE, 4,
+          EquipmentType.LEGGINGS, 5,
+          EquipmentType.BOOTS, 2),
+      12,
+      SoundEvents.ITEM_ARMOR_EQUIP_GOLD,
+      0.0f,
+      0.0f,
+      TagKey.of(RegistryKeys.ITEM, Identifier.of("minecraft", "copper_ingots")),
+      RegistryKey.of(RegistryKey.ofRegistry(Identifier.of("minecraft", "equipment_asset")), Identifier.of("foundations", "copper")));
 
-  private static final int[] PROTECTION = new int[] {1, 4, 5, 2};
-
-  @Override
-  public int getDurability(EquipmentSlot slot) {
-    return BASE_DURABILITY[slot.getEntitySlotId()] * 11;
-  }
-
-  @Override
-  public int getProtectionAmount(EquipmentSlot slot) {
-    return PROTECTION[slot.getEntitySlotId()];
-  }
-
-  @Override
-  public int getEnchantability() {
-    return 12;
-  }
-
-  @Override
-  public SoundEvent getEquipSound() {
-
-    return SoundEvents.ITEM_ARMOR_EQUIP_GOLD;
-  }
-
-  @Override
-  public Ingredient getRepairIngredient() {
-
-    return Ingredient.ofItems(Items.COPPER_INGOT);
-  }
-
-  @Override
-  public String getName() {
-
-    return "copper";
-  }
-
-  @Override
-  public float getToughness() {
-
-    return 0;
-  }
-
-  @Override
-  public float getKnockbackResistance() {
-
-    return 0;
-  }
 }
